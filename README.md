@@ -24,7 +24,7 @@ El sitio ha sido desarrollado utilizando HTML y CSS, siguiendo una metodología 
 
 ## Estructura del Proyecto
 
-```text
+
 index.html
 quienes-somos.html
 contacto.html
@@ -34,7 +34,7 @@ css/
 │
 img/
  
-```
+
 
 ## Páginas del Sitio
 

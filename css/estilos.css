@@ -162,6 +162,25 @@ footer {
 }
 
 
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* Título principal del footer */
+footer h3{
+    color: #42A5F5; /* Blanco azulado */; /* Dorado */
+    font-size: 28px;
+}
+
+/* Subtítulo de integrantes */
+footer h4{
+    color: #90CAF9; /* Verde claro */
+    font-size: 22px;
+}
 
 /* Diseño adaptable para celulares */
 @media(max-width:768px) {

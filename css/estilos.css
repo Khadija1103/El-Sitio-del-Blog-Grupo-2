@@ -100,6 +100,54 @@ section h2{
     margin-bottom:10px;
 }
 
+
+#section-aplicaciones-img{
+    width: 30%;
+    background-image: url("https://thinkupsoft.com/blog/wp-content/uploads/2024/05/IA-para-tu-app_Blog-Nota.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+}
+#section-aplicaciones-texto{
+    width: 70%;
+}
+
+#section-aplicaciones-ia{
+    display: flex;
+    flex-direction: row;
+}
+
+#section-beneficios-texto{
+    width: 70%;
+}
+
+#section-beneficios-img{
+    width: 30%;
+    background-image: url("https://grupoinmotion.com/wp-content/uploads/2021/03/inteligencia-artificial-en-retail-beneficios-ai-ia-in-motion.jpg");
+    background-position: center;
+    border-radius: 7px;
+}
+
+#section-beneficios-ia{
+    display: flex;
+    flex-direction: row;
+}
+
+
+section ul{
+    list-style: none;
+}
+section li{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+section li p{
+    font-weight: 100;
+    font-size: 1em;
+}
+
 /* Pie de página */
 footer{
     background:#0d47a1;

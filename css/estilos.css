@@ -103,19 +103,6 @@ section {
     flex: 70%;
 }
 
-<<<<<<< Updated upstream
-/* Pie de página */
-footer{
-    background:#0d47a1;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
-}
-
-/* Diseño adaptable para celulares */
-@media(max-width:768px){
-=======
 #section-aplicaciones-img,
 #section-beneficios-img {
     flex: 30%;
@@ -143,7 +130,6 @@ footer{
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
->>>>>>> Stashed changes
 
 /* Tarjetas */
 .about-us section {

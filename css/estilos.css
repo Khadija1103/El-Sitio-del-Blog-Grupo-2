@@ -100,7 +100,7 @@ section h2{
     margin-bottom:10px;
 }
 
-
+/* Estilos de las secciones aplicaciones y beneficios en el index */
 #section-aplicaciones-img{
     width: 30%;
     background-image: url("https://thinkupsoft.com/blog/wp-content/uploads/2024/05/IA-para-tu-app_Blog-Nota.png");
@@ -108,6 +108,7 @@ section h2{
     background-size: cover;
     border-radius: 7px;
 }
+
 #section-aplicaciones-texto{
     width: 70%;
 }
@@ -133,17 +134,18 @@ section h2{
     flex-direction: row;
 }
 
-
-section ul{
+/* Cambios en el las secciones de aplicaciones y beneficios en el index */
+#section-aplicaciones-ia ul, #section-beneficios-ia ul{
     list-style: none;
 }
-section li{
+
+#section-aplicaciones-ia li, #section-beneficios-ia li{
     font-weight: bold;
     font-size: 1.2em;
     margin: 10px;
 }
 
-section li p{
+#section-aplicaciones-ia li p, #section-beneficios-ia p{
     font-weight: 100;
     font-size: 1em;
 }

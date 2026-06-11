@@ -1,106 +1,167 @@
 /* Elimina márgenes y espacios predeterminados */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilos generales del cuerpo de la página */
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
-    color:#333;
-    line-height:1.6;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Encabezado principal */
-header{
-    background:#0d47a1;
-    color:white;
-    padding:15px;
+header {
+    background: #0d47a1;
+    color: white;
+    padding: 15px;
 
     /* Mantiene el menú visible al hacer scroll */
-    position:sticky;
-    top:0;
-    z-index:1000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Título principal */
-header h1{
-    text-align:center;
-    margin-bottom:10px;
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 /* Lista del menú */
-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    gap:20px;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* Enlaces del menú */
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Efecto cuando el usuario pasa el mouse */
-nav a:hover{
-    color:#90caf9;
+nav a:hover {
+    color: #90caf9;
 }
 
 /* Área principal de contenido */
-main{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:30px 0;
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
 }
 
 /* Sección principal con imagen y texto */
-.hero{
-    display:flex;
-    align-items:center;
-    gap:30px;
-    margin-bottom:40px;
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
 /* Contenedor de texto */
-.texto{
-    flex:1;
+.texto {
+    flex: 1;
 }
 
 /* Contenedor de imagen */
-.imagen{
-    flex:1;
+.imagen {
+    flex: 1;
 }
 
 /* Ajusta la imagen al ancho disponible */
-.imagen img{
-    width:100%;
-    border-radius:10px;
+.imagen img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* Diseño general de las secciones */
-section{
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:10px;
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 
     /* Sombra suave */
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Títulos de las secciones */
-section h2{
-    color:#0d47a1;
-    margin-bottom:10px;
+section h2 {
+    color: #0d47a1;
+    margin-bottom: 10px;
 }
 
 /* Pie de página */
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* sección acerca de nosotros */
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-us section {
+    flex-basis: 519px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us section img {
+    width: 300px;
+}
+
+
+.equipo {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.equipo h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.lista-equipo {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    gap: 15px;
+}
+
+.lista-equipo li {
+    padding: 15px 20px;
+    border-radius: 8px;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
 footer{
     background:#0d47a1;
     color:white;
@@ -109,18 +170,30 @@ footer{
     margin-top:30px;
 }
 
+/* Título principal del footer */
+footer h3{
+    color: #42A5F5; /* Blanco azulado */; /* Dorado */
+    font-size: 28px;
+}
+
+/* Subtítulo de integrantes */
+footer h4{
+    color: #90CAF9; /* Verde claro */
+    font-size: 22px;
+}
+
 /* Diseño adaptable para celulares */
-@media(max-width:768px){
+@media(max-width:768px) {
 
     /* Coloca la imagen debajo del texto */
-    .hero{
-        flex-direction:column;
+    .hero {
+        flex-direction: column;
     }
 
     /* Menú vertical para pantallas pequeñas */
-    nav ul{
-        flex-direction:column;
-        text-align:center;
+    nav ul {
+        flex-direction: column;
+        text-align: center;
     }
 
 }

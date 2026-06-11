@@ -127,6 +127,8 @@ footer {
 
 .about-us section img {
     width: 300px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 
@@ -160,6 +162,8 @@ footer {
 
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
+
+/* cierre sección acerca de nosotros */
 
 
 footer{

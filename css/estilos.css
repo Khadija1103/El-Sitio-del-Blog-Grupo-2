@@ -1,327 +1,228 @@
-/* ================= RESET ================= */
-* {
+/* ===================== GENERAL ===================== */
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ================= BODY ================= */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #eef2f7;
+    color: #1e293b;
+    line-height: 1.7;
 }
 
-/* ================= HEADER ================= */
-header {
-    background: #0d47a1;
-    color: white;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* ===================== NAVBAR ===================== */
+
+.navbar{
+    background: linear-gradient(90deg,#0f172a,#1d4ed8);
+    padding: 15px 0;
 }
 
-header h1 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-/* ================= NAV ================= */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
+.navbar-brand{
+    font-size: 1.8rem;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
-nav a:hover {
-    color: #90caf9;
-}
-
-/* ================= MAIN ================= */
-main {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px 0;
-}
-
-/* =====================================================
-   ====================== INDEX =========================
-   ===================================================== */
-
-/* HERO (NO TOCAR IMÁGENES) */
-.hero {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.hero .texto,
-.hero .imagen {
-    flex: 1;
-}
-
-.hero img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* 🔥 IMPORTANTE: NO usar section global con flex */
-section {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* ================= INDEX FLEX SOLO PARA ESTAS SECCIONES ================= */
-#section-aplicaciones-ia,
-#section-beneficios-ia {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-#section-aplicaciones-texto,
-#section-beneficios-texto {
-    flex: 70%;
-}
-
-#section-aplicaciones-img,
-#section-beneficios-img {
-    flex: 30%;
-    min-height: 250px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-}
-
-/* imágenes index */
-#section-aplicaciones-img {
-    background-image: url("https://thinkupsoft.com/blog/wp-content/uploads/2024/05/IA-para-tu-app_Blog-Nota.png");
-}
-
-#section-beneficios-img {
-    background-image: url("https://grupoinmotion.com/wp-content/uploads/2021/03/inteligencia-artificial-en-retail-beneficios-ai-ia-in-motion.jpg");
-}
-
-/* =====================================================
-   =============== QUIÉNES SOMOS =========
-   ===================================================== */
-
-.about-us {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-/* Tarjetas */
-.about-us section {
-    background: white;
-    padding: 35px;
-    border-radius: 14px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
-
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    min-height: 550px;
-}
-
-/* Títulos */
-.about-us section h2 {
-    color: #0d47a1;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-/* Párrafos */
-.about-us section p {
-    text-align: justify;
-    line-height: 1.8;
-}
-
-/* Listas */
-.about-us section ul {
-    text-align: justify;
-    padding-left: 25px;
-    line-height: 1.8;
-}
-
-/* Imágenes centradas abajo */
-.about-us section img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-
-    border-radius: 12px;
-
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-
-    display: block;
-}
-
-/* Tarjeta Nuestro Equipo */
-
-
-.about-us .equipo {
-    grid-column: 1 / 3;
-
-    width: 75%;
-    margin: 0 auto;
-
-    min-height: auto;
-
-    text-align: center;
-}
-
-/* Título */
-.about-us .equipo h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Lista normal */
-.lista-equipo {
-    list-style: disc;
-    display: inline-block;
-
-    text-align: left;
-
-    padding-left: 30px;
-    margin: 0 auto;
-}
-
-/* Nombres */
-.lista-equipo li {
-    background: none;
-    box-shadow: none;
-    border-radius: 0;
-
-    padding: 0;
-    margin-bottom: 10px;
-
-    width: auto;
-    max-width: none;
-}
-/* =====================================================
-   ===================== CONTACTO =======================
-   ===================================================== */
-
-.intro {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 30px;
-}
-
-/* ===================== TARJETAS EQUIPO ===================== */
-.equipo-contacto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.miembro {
-    background: white;
-    width: 260px;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.nav-link{
+    color: white !important;
+    font-weight: 500;
+    margin-left: 15px;
     transition: 0.3s;
 }
 
-.miembro:hover {
+.nav-link:hover{
+    color: #93c5fd !important;
+}
+
+/* ===================== HERO ===================== */
+
+.hero{
+    padding: 70px 0;
+}
+
+.hero-box{
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+}
+
+.hero-text{
+    padding: 50px;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 25px;
+}
+
+.hero-text p{
+    font-size: 1.1rem;
+    color: #475569;
+}
+
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===================== BOTONES ===================== */
+
+.btn-custom{
+    background: #2563eb;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 20px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn-custom:hover{
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* ===================== SECCIONES ===================== */
+
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2{
+    font-size: 2.3rem;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.section-title p{
+    color: #64748b;
+}
+
+/* ===================== CARDS ===================== */
+
+.custom-card{
+    border: none;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.4s;
+    background: white;
+}
+
+.custom-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.custom-card img{
+    height: 240px;
+    object-fit: cover;
+}
+
+.custom-card .card-body{
+    padding: 25px;
+}
+
+.custom-card h3{
+    color: #0f172a;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.custom-card p{
+    color: #475569;
+}
+
+/* ===================== INFO ===================== */
+
+.info-section{
+    background: white;
+    padding: 40px;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* ===================== EQUIPO ===================== */
+
+.miembro{
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.miembro:hover{
     transform: translateY(-6px);
 }
 
-.miembro h3 {
-    color: #0d47a1;
+.miembro h3{
+    color: #0f172a;
     margin-bottom: 10px;
 }
 
-.miembro p {
-    font-size: 13px;
+.miembro p{
     color: #2563eb;
-    font-weight: bold;
+    font-weight: 600;
 }
 
-/* ===================== INFORMACIÓN GENERAL ===================== */
-.info-contacto {
-    max-width: 600px;
-    margin: 30px auto;
+/* ===================== FORMULARIO ===================== */
+
+.form-box{
     background: white;
-    padding: 25px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-control{
+    padding: 14px;
     border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-
-    text-align: center; /* 👈 CENTRADO TOTAL */
 }
 
-.info-contacto p {
-    margin: 6px 0;
+textarea{
+    resize: none;
 }
 
-/* ===================== MENSAJE FINAL ===================== */
-.mensaje-final {
-    text-align: center;
-    margin: 30px auto;
-    max-width: 700px;
-    font-style: italic;
-    color: #374151;
-}
+/* ===================== FOOTER ===================== */
 
-/* =====================================================
-   ===================== FOOTER =========================
-   ===================================================== */
-
-footer {
-    background: #0d47a1;
+footer{
+    background: linear-gradient(90deg,#0f172a,#1d4ed8);
     color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+    margin-top: 80px;
+    padding: 50px 0;
 }
 
-/* =====================================================
-   ================= RESPONSIVE =========================
-   ===================================================== */
-
-@media (max-width: 768px) {
-
-    .hero,
-    #section-aplicaciones-ia,
-    #section-beneficios-ia,
-    .about-us {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about-us section:last-child {
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
+footer h4{
+    margin-bottom: 20px;
+    font-weight: 700;
 }
+
+footer p{
+    color: #dbeafe;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media(max-width:768px){
+
+    .hero-text{
+        padding: 30px;
+    }
+
+    .hero-text h1{
+        font-size: 2rem;
+    }
+
+}
+

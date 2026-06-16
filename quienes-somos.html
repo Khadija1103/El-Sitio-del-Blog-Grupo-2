@@ -1,143 +1,323 @@
-<!doctype html>
-<!-- Indica que el documento utiliza HTML5 -->
-
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Permite usar caracteres especiales como tildes y ñ -->
-    <meta charset="UTF-8" />
 
-    <!-- Hace que el sitio sea adaptable a celulares y tablets -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
 
-    <!-- Título que aparece en la pestaña del navegador -->
-    <title>IA al Día</title>
+    <meta charset="UTF-8">
 
-    <!-- Conexión con la hoja de estilos CSS -->
-    <link rel="stylesheet" href="css/estilos.css" />
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <!-- Encabezado principal del sitio -->
-    <header>
-      <!-- Nombre del blog -->
-      <h1>IA al Día</h1>
+    <title>Quiénes Somos - IA al Día</title>
 
-      <!-- Menú de navegación -->
-      <nav>
-        <ul>
-          <!-- Enlace a la página principal -->
-          <li><a href="index.html">Inicio</a></li>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-          <!-- Enlace a la página Quiénes Somos -->
-          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
 
-          <!-- Enlace a la página de contacto -->
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+</head>
 
-    <!-- Contenido principal del sitio -->
-    <main class="about-us">
-      <section>
-        <h2>¿Quiénes Somos?</h2>
+<body>
 
-        <p>
-          Somos un grupo de estudiantes apasionados por la tecnología, la
-          innovación y el aprendizaje continuo. Este blog fue creado como parte
-          de una práctica académica de Desarrollo Web, utilizando HTML, CSS,
-          GitHub y la metodología SCRUM para fortalecer nuestras habilidades
-          técnicas y de trabajo colaborativo.
-        </p>
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/020/627/820/non_2x/one-continuous-line-drawing-group-of-young-male-and-female-business-people-unite-their-hands-together-to-form-a-five-star-shape-unity-teamwork-concept-single-line-draw-design-illustration-vector.jpg"
-          alt="manos unidas en equipo"
-        />
-      </section>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
 
-      <section>
-        <h2>¿Qué hace nuestro grupo?</h2>
+        <div class="container">
 
-        <p>
-          Nuestro grupo investiga, organiza y comparte información relacionada
-          con la Inteligencia Artificial, con el objetivo de transformar temas
-          tecnológicos complejos en contenido claro y fácil de comprender. A
-          través de este espacio buscamos ayudar a más personas a conocer las
-          aplicaciones, beneficios y desafíos de la IA en la vida cotidiana.
-        </p>
-        <img
-          src="https://www.esneca.com/wp-content/uploads/evolucion-inteligencia-artificial.jpg"
-          alt="IA"
-        />
-      </section>
+            <a class="navbar-brand" href="#">
+                IA al Día
+            </a>
 
-      <section>
-        <h2>¿Por qué existe este sitio web?</h2>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
 
-        <p>
-          Mentes Digitales fue creado para acercar el conocimiento sobre
-          Inteligencia Artificial a estudiantes, principiantes y personas
-          interesadas en la tecnología. Queremos ofrecer contenido educativo,
-          accesible y organizado que permita comprender cómo la IA está
-          transformando áreas como la educación, la salud, el trabajo y la
-          comunicación.
-        </p>
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/026/982/360/non_2x/one-line-drawing-of-groups-of-young-happy-college-students-giving-thumbs-up-gesture-after-studying-together-at-campus-library-learn-and-study-in-university-life-concept-continuous-line-draw-design-png.png"
-          alt="grupo de estudiantes"
-        />
-      </section>
+                <span class="navbar-toggler-icon"></span>
 
-      <section>
-        <h2>¿Cómo trabajamos como equipo?</h2>
+            </button>
 
-        <ul>
-          <li>Investigamos temas relacionados con Inteligencia Artificial.</li>
-          <li>Diseñamos y organizamos el contenido del blog.</li>
-          <li>Desarrollamos el sitio utilizando HTML, CSS y GitHub.</li>
-          <li>Aplicamos trabajo colaborativo mediante metodología SCRUM.</li>
-          <li>Realizamos pruebas y mejoras para optimizar el sitio web.</li>
-        </ul>
-        <img
-          src="https://universidades.app/assets/img/blog/el-impacto-de-la-inteligencia-artificial-en-la-investigacion-cientifica_1.jpg"
-          alt="investigadores"
-        />
-      </section>
+            <div class="collapse navbar-collapse" id="menu">
 
-      <section class="equipo">
-        <h2>Nuestro Equipo</h2>
+                <ul class="navbar-nav ms-auto">
 
-        <ul class="lista-equipo">
-          <li>Daniel Steven López Pérez</li>
-          <li>Tatiana Marrugo Jimenez</li>
-          <li>Mary Carmen Figueroa Campo</li>
-          <li>Juan Sebastian Angulo Torres</li>
-          <li>Girley Barahona Carretero</li>
-        </ul>
-      </section>
-    </main>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
 
-    <!-- Pie de página -->
-  
+                    <li class="nav-item">
+                        <a class="nav-link active" href="quienes-somos.html">
+                            Quiénes Somos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-box">
+
+                <div class="row align-items-center g-0">
+
+                    <div class="col-lg-6">
+
+                        <div class="hero-text">
+
+                            <h1>
+                                ¿Quiénes Somos?
+                            </h1>
+
+                            <p>
+                                Somos un grupo de estudiantes apasionados por
+                                la tecnología, la innovación y el aprendizaje
+                                continuo. Este proyecto fue desarrollado como
+                                parte de una práctica académica de Desarrollo Web.
+                            </p>
+
+                            <button class="btn-custom">
+                                Conocer Más
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 hero-img">
+
+                        <img
+                            src="https://static.vecteezy.com/system/resources/previews/020/627/820/non_2x/one-continuous-line-drawing-group-of-young-male-and-female-business-people-unite-their-hands-together-to-form-a-five-star-shape-unity-teamwork-concept-single-line-draw-design-illustration-vector.jpg"
+                            alt="Equipo"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= INFORMACIÓN ================= -->
+    <section class="pb-5">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+                    Nuestro Proyecto
+                </h2>
+
+                <p>
+                    Un espacio educativo enfocado en Inteligencia Artificial.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-lg-6">
+
+                    <div class="card custom-card h-100">
+
+                        <img
+                            src="https://www.esneca.com/wp-content/uploads/evolucion-inteligencia-artificial.jpg"
+                            alt="IA"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                ¿Qué hacemos?
+                            </h3>
+
+                            <p>
+                                Investigamos y compartimos información relacionada
+                                con la Inteligencia Artificial, transformando temas
+                                complejos en contenido educativo y fácil de comprender.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-lg-6">
+
+                    <div class="card custom-card h-100">
+
+                        <img
+                            src="https://universidades.app/assets/img/blog/el-impacto-de-la-inteligencia-artificial-en-la-investigacion-cientifica_1.jpg"
+                            alt="Investigación"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                ¿Cómo trabajamos?
+                            </h3>
+
+                            <ul class="list-group list-group-flush">
+
+                                <li class="list-group-item">
+                                    Investigación tecnológica
+                                </li>
+
+                                <li class="list-group-item">
+                                    Diseño y desarrollo web
+                                </li>
+
+                                <li class="list-group-item">
+                                    Metodología SCRUM
+                                </li>
+
+                                <li class="list-group-item">
+                                    Trabajo colaborativo
+                                </li>
+
+                                <li class="list-group-item">
+                                    Optimización del sitio web
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EQUIPO ================= -->
+    <section class="pb-5">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+                    Nuestro Equipo
+                </h2>
+
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-md-4">
+
+                    <div class="miembro">
+
+                        <h3>Tatiana Marrugo Jiménez</h3>
+
+                        <p>Desarrollo y Diseño Web</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="miembro">
+
+                        <h3>Daniel Steven López Pérez</h3>
+
+                        <p>Investigación y Desarrollo</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="miembro">
+
+                        <h3>Mary Carmen Figueroa Campo</h3>
+
+                        <p>Documentación y Contenido</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="miembro">
+
+                        <h3>Juan Sebastián Angulo Torres</h3>
+
+                        <p>Programación Web</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="miembro">
+
+                        <h3>Girley Barahona Carretero</h3>
+
+                        <p>Diseño y Organización</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
     <footer>
 
-        <h3>El Sitio del Blog - Grupo 2</h3> <br>
+        <div class="container text-center">
 
-        <p>
-       Valoramos tus opiniones y sugerencias para seguir compartiendo contenido de calidad sobre Inteligencia Artificial.
-        </p> <br>
+            <h4>
+                El Sitio del Blog - Grupo 2
+            </h4>
 
-        <p>Contacto: contacto@iaaldia.com</p> <br>
+            <p>
+                Proyecto educativo enfocado en Inteligencia Artificial.
+            </p>
 
-        <h4>Integrantes:</h4>
-        <p>
-            Girley Barahona Carretero,<br>
-            Daniel Steven López Pérez,<br>
-            Mary Carmen Figueroa Campo,<br>
-            Tatiana Marrugo Jiménez,<br>
-            Juan Sebastián Angulo Torres<br>
-        </p>
+        </div>
 
     </footer>
-  </body>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>
+

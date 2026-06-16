@@ -75,7 +75,7 @@ body{
 /* ===================== BOTONES ===================== */
 
 .btn-custom{
-    background: linear-gradient(to right,#2563eb, #7c3aed);;
+    background: linear-gradient(to right,#2563eb, #7c3aed);
     color: white;
     padding: 14px 28px;
     border-radius: 12px;
